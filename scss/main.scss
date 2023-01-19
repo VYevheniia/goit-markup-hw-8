@@ -1,0 +1,24 @@
+// Utils
+@import './utils/variables';
+
+// Bases styles
+@import './base/base';
+@import './base/reset';
+
+// Components
+@import './components/button';
+@import './components/buttons-portfolio';
+@import './components/features-section';
+@import './components/cards-portfolio';
+@import './components/clients-section';
+@import './components/logo';
+@import './components/hero';
+@import './components/staff-section';
+@import './components/works-section';
+
+// Layout
+
+@import './layout/container';
+@import './layout/header';
+@import './layout/modal';
+@import './layout/footer';

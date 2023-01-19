@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-white-bgc);
+  color: var(--color-primery);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.features,
+.works,
+.staff,
+.clients,
+.main {
+  padding: 94px 0;
+}
+
+img {
+  display: block;
+}
