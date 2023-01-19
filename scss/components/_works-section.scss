@@ -36,4 +36,16 @@
     text-align: center;
     text-transform: uppercase;
   }
+
+  // @media (max-width: 479px) {
+  //   display: none;
+  // }
+
+  // @media (max-width: 768px) {
+  //   display: none;
+  // }
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 }

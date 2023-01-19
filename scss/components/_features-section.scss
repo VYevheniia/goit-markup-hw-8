@@ -2,9 +2,25 @@
   padding-bottom: 0;
 
   &__list {
-    display: flex;
-    justify-content: center;
+    @media (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
     gap: 30px;
+  }
+
+  &__card {
+    flex-basis: calc((100% - 30px) / 2);
+
+    @media (min-width: 1200px) {
+    }
   }
 
   &__icons {
@@ -17,6 +33,20 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+
+    @media (max-width: 479px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      width: 100%;
+    }
   }
 
   &__caption {
@@ -28,6 +58,14 @@
     border-radius: 4px;
 
     margin-bottom: 10px;
+
+    @media (max-width: 479px) {
+      margin-left: auto;
+    }
+
+    @media (max-width: 480px) {
+      margin-left: auto;
+    }
   }
 
   &__p {
@@ -35,17 +73,17 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
+
+    @media (max-width: 479px) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
   }
-}
-
-.fuatures__icons {
-  width: 270px;
-  height: 120px;
-  background-color: var(--color-gray-bgc);
-  margin-bottom: 30px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
 }

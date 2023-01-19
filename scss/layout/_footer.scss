@@ -2,13 +2,34 @@
   background-color: var(--color-around-black-bgc);
   padding: 60px 0;
 
+  @media (min-width: 1200px) {
+    height: 252px;
+  }
+
   &__flex {
-    display: flex;
     align-items: baseline;
+    text-align: center;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      text-align: inherit;
+    }
   }
 
   &__socials {
-    margin-left: 70px;
+    margin-bottom: 60px;
+
+    @media (min-width: 1200px) {
+      margin-left: 70px;
+    }
   }
 
   &__p {
@@ -79,6 +100,10 @@
 .subscribes {
   margin-left: auto;
 
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 0;
+  }
+
   &__input {
     width: 358px;
     height: 50px;
@@ -88,6 +113,22 @@
     background-color: transparent;
 
     padding: 15px 0 15px 16px;
+
+    @media (max-width: 479px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      margin-bottom: 30px;
+      width: 450px;
+    }
   }
 }
 
